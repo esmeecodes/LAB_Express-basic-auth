@@ -1,2 +1,14 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<p>Welcome to the Lab page</p>
+
+<div>
+  {{#if userIsLoggedIn}}
+    <p>Logged in as {{user.username}}</p>
+    <a href="/private">Go to private section</a>
+    <a href="/main">See the special message for you</a>
+  {{else}}
+    <p>You are not logged in</p>
+  {{/if}}
+
+</div>
